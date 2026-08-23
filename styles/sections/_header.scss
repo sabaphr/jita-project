@@ -1,0 +1,137 @@
+@use "../functions/variables" as *;
+@use "../functions/mixins" as *;
+
+.site-header {
+  width: 100%;
+
+  .top-bar {
+    width: 100%;
+    height: 42px;
+    background-color: $color-dark;
+    color: $color-white;
+
+    &__content {
+      width: calc(100% - 180px);
+      height: 100%;
+      margin: 0 auto;
+      @include flex-layout($justify: space-between, $align: center);
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    &__phone {
+      strong {
+        font-weight: 700;
+      }
+    }
+
+    &__offer {
+      font-weight: 700;
+    }
+
+    &__socials {
+      @include flex-layout($align: center, $gap: 18px);
+
+      a {
+        display: flex;
+      }
+
+      img {
+        width: auto;
+        height: 30px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .main-navbar {
+    width: 100%;
+    height: 84px;
+    background-color: $color-navbar;
+
+    &__content {
+      width: calc(100% - 180px);
+      height: 100%;
+      margin: 0 auto;
+      @include flex-layout($justify: space-between, $align: center);
+    }
+
+    &__logo {
+      @include flex-layout($align: center, $gap: 12px);
+      color: $color-white;
+      font-size: 22px;
+      font-weight: 600;
+
+      img {
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+        border-radius: 100%;
+      }
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+
+    &__links {
+      @include flex-layout($align: center, $gap: 30px);
+
+      a {
+        padding: 7px 0;
+        color: $color-white;
+        font-size: 17px;
+        font-weight: 600;
+
+        &:hover {
+          color: $color-yellow;
+        }
+
+        &.active {
+          color: $color-yellow;
+          border-bottom: 2px solid $color-yellow;
+        }
+      }
+    }
+
+    &__actions {
+      @include flex-layout($align: center, $gap: 22px);
+    }
+  }
+
+  .search-button {
+    background-color: #00000000;
+    border: 0;
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+  }
+
+  .appointment-button {
+    width: 288px;
+    height: 54px;
+    padding: 0 22px;
+    border-radius: 4px;
+    background-color: $color-yellow;
+    color: $color-black;
+    font-weight: 600;
+
+    @include flex-layout($justify: space-between, $align: center);
+
+    img {
+      width: 35px;
+      height: 35px;
+      object-fit: contain;
+    }
+
+    &:hover {
+      background-color: #ffc329;
+      color: $color-black;
+    }
+  }
+}

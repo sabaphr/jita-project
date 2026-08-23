@@ -1,0 +1,15 @@
+@mixin flex-layout($justify: null, $align: null, $gap: null) {
+  display: flex;
+
+  @if $justify {
+    justify-content: $justify;
+  }
+
+  @if $align {
+    align-items: $align;
+  }
+
+  @if $gap {
+    gap: $gap;
+  }
+}
