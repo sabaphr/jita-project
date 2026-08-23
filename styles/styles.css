@@ -121,6 +121,7 @@ ul {
   z-index: 10;
   width: 100%;
   height: 84px;
+  backdrop-filter: blur(8px);
   background-color: rgba(85, 87, 90, 0.5725490196);
 }
 .site-header .main-navbar__content {

@@ -52,6 +52,7 @@
     z-index: 10;
     width: 100%;
     height: 84px;
+    backdrop-filter: blur(8px);
     background-color: $color-navbar;
 
     &__content {
