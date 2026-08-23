@@ -8,10 +8,7 @@
     height: 720px;
   }
 
-  .carousel-inner {
-    height: 100%;
-  }
-
+  .carousel-inner,
   .carousel-item {
     height: 100%;
   }
@@ -23,7 +20,7 @@
   }
 
   &__caption {
-    top: 290px;
+    top: 245px;
     right: auto;
     bottom: auto;
     left: 5%;
@@ -33,7 +30,7 @@
 
     h1,
     h2 {
-      margin: 0;
+      margin: 25px 0 38px;
       color: $color-white;
       font-size: 68px;
       font-weight: 700;
@@ -46,15 +43,71 @@
     }
   }
 
+  &__line {
+    width: 560px;
+    display: flex;
+    align-items: center;
+
+    span {
+      flex: 1;
+      border-top: 2px dashed $color-yellow;
+    }
+
+    img {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 22px;
+  }
+
+  .hero-button {
+    width: 230px;
+    height: 54px;
+    border-radius: 4px;
+    font-weight: 600;
+
+    .animated-button__icon {
+      width: 25px;
+      height: 25px;
+    }
+
+    &--quote {
+      border: 1px solid $color-yellow;
+      background-color: $color-yellow;
+      color: $color-black;
+    }
+
+    &--service {
+      border: 1px solid $color-white;
+      background-color: transparent;
+      color: $color-white;
+    }
+  }
+
   .carousel-control-prev,
   .carousel-control-next {
     top: 50%;
     width: 44px;
     height: 44px;
+
     border: 1px solid $color-white;
     border-radius: 50%;
+
+    background-color: transparent;
+
     transform: translateY(-50%);
     opacity: 1;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $color-yellow;
+      border-color: $color-yellow;
+    }
   }
 
   .carousel-control-prev {
