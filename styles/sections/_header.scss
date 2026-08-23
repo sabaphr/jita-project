@@ -116,22 +116,10 @@
     width: 288px;
     height: 54px;
     padding: 0 22px;
+    border: 1px solid $color-yellow;
     border-radius: 4px;
     background-color: $color-yellow;
     color: $color-black;
     font-weight: 600;
-
-    @include flex-layout($justify: space-between, $align: center);
-
-    img {
-      width: 35px;
-      height: 35px;
-      object-fit: contain;
-    }
-
-    &:hover {
-      background-color: #ffc329;
-      color: $color-black;
-    }
   }
 }
