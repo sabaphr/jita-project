@@ -1,0 +1,180 @@
+@use "../functions/variables" as *;
+@use "../functions/mixins" as *;
+
+/* SERVICES SECTION START */
+
+.services {
+  padding: 80px 0 110px;
+  background-color: #fbf9f2;
+
+  &__content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .service-head {
+    margin-bottom: 45px;
+    text-align: center;
+
+    h2 {
+      margin: 45px 0 0;
+      color: $color-dark;
+      font-size: 48px;
+      font-weight: 600;
+    }
+  }
+
+  .service-mark {
+    position: relative;
+    height: 85px;
+
+    p {
+      color: #e8e5df;
+      font-size: 80px;
+      font-weight: 600;
+      letter-spacing: 18px;
+    }
+  }
+
+  .service-line {
+    position: absolute;
+    top: 10px;
+    left: 0;
+
+    width: 100%;
+
+    @include flex-layout($align: center);
+
+    span {
+      flex: 1;
+      border-top: 2px dashed $color-yellow;
+    }
+
+    img {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+    }
+  }
+  .service-card {
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .card-img-top {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 0;
+    }
+  }
+
+  .service-name {
+    height: 100px;
+    padding: 0 25px;
+
+    @include flex-layout($justify: space-between, $align: center);
+
+    h3 {
+      margin: 0;
+      color: $color-dark;
+      font-size: 25px;
+      font-weight: 600;
+    }
+
+    img {
+      width: 62px;
+      height: 62px;
+      object-fit: contain;
+    }
+  }
+  .service-info {
+    height: 115px;
+    padding: 22px;
+
+    @include flex-layout($justify: space-between, $align: center, $gap: 18px);
+
+    p {
+      width: 70%;
+      margin: 0;
+      color: #9699a4;
+    }
+
+    a {
+      color: $color-dark;
+      font-size: 17px;
+      font-weight: 600;
+
+      span {
+        color: $color-yellow;
+      }
+
+      &:hover {
+        color: $color-yellow;
+      }
+    }
+  }
+  /* SERVICE CAROUSEL CONTROLS START */
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 50%;
+
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid $color-yellow;
+    border-radius: 50%;
+    background-color: $color-white;
+    transform: translateY(-50%);
+    opacity: 1;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $color-yellow;
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        border-top-color: $color-white;
+        border-left-color: $color-white;
+      }
+    }
+  }
+
+  .carousel-control-prev {
+    left: -60px;
+    padding-left: 5px;
+  }
+
+  .carousel-control-next {
+    right: -60px;
+    padding-right: 5px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 13px;
+    height: 13px;
+
+    background-image: none;
+
+    border-top: 2px solid $color-yellow;
+    border-left: 2px solid $color-yellow;
+  }
+
+  .carousel-control-prev-icon {
+    transform: rotate(-45deg);
+  }
+
+  .carousel-control-next-icon {
+    transform: rotate(135deg);
+  }
+
+  /* SERVICE CAROUSEL CONTROLS END */
+}
+
+/* SERVICES SECTION END */

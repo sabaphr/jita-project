@@ -229,7 +229,6 @@ ul {
   color: #ffffff;
   font-size: 68px;
   font-weight: 700;
-  line-height: 1.2;
 }
 .hero__caption--right {
   left: 51%;
@@ -435,19 +434,22 @@ ul {
   color: #ffb700;
   font-size: 15px;
 }
+.experienced__bottom {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
 .experienced h2 {
   margin: 0;
   color: #161719;
   font-size: 48px;
   font-weight: 600;
-  line-height: 1.15;
 }
 .experienced__description {
   width: 92%;
   margin: 25px 0 42px;
   color: #9699a4;
   font-size: 18px;
-  line-height: 1.6;
 }
 .experienced__services {
   margin-bottom: 42px;
@@ -476,7 +478,6 @@ ul {
   margin: 0;
   color: #9699a4;
   font-size: 17px;
-  line-height: 1.55;
 }
 .experienced__divider {
   width: 100%;
@@ -551,4 +552,163 @@ ul {
   color: #4c4c56;
   font-size: 18px;
   font-weight: 600;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/* SERVICES SECTION START */
+.services {
+  padding: 80px 0 110px;
+  background-color: #fbf9f2;
+}
+.services__content {
+  width: 90%;
+  margin: 0 auto;
+}
+.services .service-head {
+  margin-bottom: 45px;
+  text-align: center;
+}
+.services .service-head h2 {
+  margin: 45px 0 0;
+  color: #161719;
+  font-size: 48px;
+  font-weight: 600;
+}
+.services .service-mark {
+  position: relative;
+  height: 85px;
+}
+.services .service-mark p {
+  color: #e8e5df;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: 18px;
+}
+.services .service-line {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.services .service-line span {
+  flex: 1;
+  border-top: 2px dashed #ffb700;
+}
+.services .service-line img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.services .service-card {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.services .service-card .card-img-top {
+  width: 100%;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.services .service-card .card-body {
+  padding: 0;
+}
+.services .service-name {
+  height: 100px;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services .service-name h3 {
+  margin: 0;
+  color: #161719;
+  font-size: 25px;
+  font-weight: 600;
+}
+.services .service-name img {
+  width: 62px;
+  height: 62px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.services .service-info {
+  height: 115px;
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+.services .service-info p {
+  width: 70%;
+  margin: 0;
+  color: #9699a4;
+}
+.services .service-info a {
+  color: #161719;
+  font-size: 17px;
+  font-weight: 600;
+}
+.services .service-info a span {
+  color: #ffb700;
+}
+.services .service-info a:hover {
+  color: #ffb700;
+}
+.services {
+  /* SERVICE CAROUSEL CONTROLS START */
+}
+.services .carousel-control-prev,
+.services .carousel-control-next {
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffb700;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: 0.3s;
+}
+.services .carousel-control-prev:hover,
+.services .carousel-control-next:hover {
+  background-color: #ffb700;
+}
+.services .carousel-control-prev:hover .carousel-control-prev-icon,
+.services .carousel-control-prev:hover .carousel-control-next-icon,
+.services .carousel-control-next:hover .carousel-control-prev-icon,
+.services .carousel-control-next:hover .carousel-control-next-icon {
+  border-top-color: #ffffff;
+  border-left-color: #ffffff;
+}
+.services .carousel-control-prev {
+  left: -60px;
+  padding-left: 5px;
+}
+.services .carousel-control-next {
+  right: -60px;
+  padding-right: 5px;
+}
+.services .carousel-control-prev-icon,
+.services .carousel-control-next-icon {
+  width: 13px;
+  height: 13px;
+  background-image: none;
+  border-top: 2px solid #ffb700;
+  border-left: 2px solid #ffb700;
+}
+.services .carousel-control-prev-icon {
+  transform: rotate(-45deg);
+}
+.services .carousel-control-next-icon {
+  transform: rotate(135deg);
+}
+.services {
+  /* SERVICE CAROUSEL CONTROLS END */
+}
+
+/* SERVICES SECTION END *//*# sourceMappingURL=styles.css.map */
