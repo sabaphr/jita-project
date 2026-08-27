@@ -207,7 +207,6 @@ ul {
 .hero__image {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
 }
 .hero__caption {
@@ -243,8 +242,8 @@ ul {
 .hero__line img {
   width: 70px;
   height: 70px;
-  border-radius: 50%;
   object-fit: contain;
+  border-radius: 50%;
 }
 .hero__buttons {
   display: flex;
@@ -297,4 +296,62 @@ ul {
 .hero .carousel-control-next-icon {
   width: 18px;
   height: 18px;
+}
+
+.hero__line,
+.hero__caption h1,
+.hero__caption h2,
+.hero__buttons .hero-button {
+  opacity: 0;
+}
+
+.carousel-item.active .hero__caption:not(.hero__caption--right) .hero__line {
+  animation: hero-up 0.5s ease forwards;
+}
+.carousel-item.active .hero__caption:not(.hero__caption--right) h1 {
+  animation: hero-up 0.5s ease 0.1s forwards;
+}
+.carousel-item.active
+  .hero__caption:not(.hero__caption--right)
+  .hero-button:first-child {
+  animation: hero-up 0.5s ease 0.2s forwards;
+}
+.carousel-item.active
+  .hero__caption:not(.hero__caption--right)
+  .hero-button:last-child {
+  animation: hero-up 0.5s ease 0.3s forwards;
+}
+
+.carousel-item.active .hero__caption--right .hero__line {
+  animation: hero-right 0.5s ease forwards;
+}
+.carousel-item.active .hero__caption--right h2 {
+  animation: hero-right 0.5s ease 0.1s forwards;
+}
+.carousel-item.active .hero__caption--right .hero-button:first-child {
+  animation: hero-right 0.5s ease 0.2s forwards;
+}
+.carousel-item.active .hero__caption--right .hero-button:last-child {
+  animation: hero-right 0.5s ease 0.3s forwards;
+}
+
+@keyframes hero-up {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes hero-right {
+  from {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 } /*# sourceMappingURL=styles.css.map */
