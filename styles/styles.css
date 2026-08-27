@@ -619,7 +619,7 @@ ul {
 .services .service-name {
   height: 100px;
   padding: 0 25px;
-  border-bottom: 1px solid #555555;
+  border-bottom: 1px solid #000000;
   background: linear-gradient(100deg, #f3db95 76%, #ffffff 76%, #ffffff 100%);
   display: flex;
   justify-content: space-between;
