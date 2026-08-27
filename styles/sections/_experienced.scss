@@ -1,0 +1,153 @@
+@use "../functions/variables" as *;
+
+.experienced {
+  padding: 25px 0 90px;
+
+  &__content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__row {
+    align-items: center;
+  }
+
+  &__left {
+    padding-right: 28px;
+  }
+
+  &__small-title {
+    margin: 0 0 15px;
+    color: $color-yellow;
+    font-size: 15px;
+  }
+
+  h2 {
+    margin: 0;
+    color: $color-dark;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.15;
+  }
+
+  &__description {
+    width: 92%;
+    margin: 25px 0 42px;
+    color: #9699a4;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  &__services {
+    margin-bottom: 42px;
+  }
+
+  .experienced-service {
+    @include flex-layout($align: flex-start, $gap: 22px);
+    img {
+      width: 62px;
+      height: 62px;
+      object-fit: contain;
+    }
+
+    div {
+      width: 72%;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      color: $color-dark;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0;
+      color: #9699a4;
+      font-size: 17px;
+      line-height: 1.55;
+    }
+  }
+
+  &__divider {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 34px;
+    background-color: #555555;
+  }
+
+  &__more {
+    width: 272px;
+
+    .animated-button__icon {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &__author {
+    @include flex-layout($align: center, $gap: 15px);
+
+    img {
+      width: 65px;
+      height: 65px;
+      object-fit: contain;
+    }
+
+    h3 {
+      margin: 0 0 3px;
+      color: $color-dark;
+      font-size: 21px;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0;
+      color: #9699a4;
+      font-size: 13px;
+    }
+  }
+
+  &__right {
+    padding-left: 28px;
+  }
+
+  &__image-box {
+    position: relative;
+    width: 100%;
+    height: 590px;
+    padding-top: 32px;
+    padding-left: 34px;
+    border-radius: 14px;
+  }
+
+  &__main-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+  }
+
+  &__experience {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    width: 340px;
+    @include flex-layout($align: flex-start, $gap: 18px);
+    padding: 10px 28px;
+    background-color: $color-white;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #00000018;
+
+    strong {
+      color: $color-yellow;
+      font-size: 46px;
+      font-weight: 600;
+    }
+
+    span {
+      color: #4c4c56;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
