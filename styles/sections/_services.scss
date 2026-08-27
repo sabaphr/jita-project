@@ -38,7 +38,7 @@
 
   .service-line {
     position: absolute;
-    top: 10px;
+    top: 30px;
     left: 0;
 
     width: 100%;
@@ -76,6 +76,14 @@
   .service-name {
     height: 100px;
     padding: 0 25px;
+    border-bottom: 1px solid #555555;
+    // linear is what makes it possible
+    background: linear-gradient(
+      100deg,
+      #f3db95 76%,
+      $color-white 76%,
+      $color-white 100%
+    );
 
     @include flex-layout($justify: space-between, $align: center);
 
