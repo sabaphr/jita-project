@@ -75,6 +75,17 @@ ul {
   opacity: 1;
 }
 
+/* YELLOW BUTTON START */
+.yellow-button {
+  height: 54px;
+  border: 1px solid #ffb700;
+  border-radius: 4px;
+  background-color: #ffb700;
+  color: #000000;
+  font-weight: 600;
+}
+
+/* YELLOW BUTTON END */
 .site-header {
   width: 100%;
 }
@@ -184,13 +195,6 @@ ul {
 }
 .site-header .appointment-button {
   width: 288px;
-  height: 54px;
-  padding: 0 22px;
-  border: 1px solid #ffb700;
-  border-radius: 4px;
-  background-color: #ffb700;
-  color: #000000;
-  font-weight: 600;
 }
 
 .hero {
@@ -480,19 +484,8 @@ ul {
   margin-bottom: 34px;
   background-color: #555555;
 }
-.experienced__bottom {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
 .experienced__more {
   width: 272px;
-  height: 54px;
-  border: 1px solid #ffb700;
-  border-radius: 4px;
-  background-color: #ffb700;
-  color: #000000;
-  font-weight: 600;
 }
 .experienced__more .animated-button__icon {
   width: 25px;
@@ -542,7 +535,7 @@ ul {
   left: 30px;
   width: 340px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 18px;
   padding: 10px 28px;
   background-color: #ffffff;
