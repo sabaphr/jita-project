@@ -76,8 +76,8 @@
   .service-name {
     height: 100px;
     padding: 0 25px;
-    border-bottom: 1px solid #555555;
-    // linear is what makes it possible
+    border-bottom: 1px solid #000000;
+    // linear is what makes it possible to be Trapezium
     background: linear-gradient(
       100deg,
       #f3db95 76%,
