@@ -556,8 +556,10 @@ ul {
 
 /* SERVICES SECTION START */
 .services {
-  padding: 80px 0 110px;
+  padding: 80px 0 30px;
   background-color: #fbf9f2;
+  position: relative;
+  z-index: 1;
 }
 .services__content {
   width: 90%;
@@ -566,6 +568,10 @@ ul {
 .services .service-head {
   margin-bottom: 45px;
   text-align: center;
+}
+.services .service-head #serviceCarousel {
+  position: relative;
+  z-index: 2;
 }
 .services .service-head h2 {
   margin: 45px 0 0;
@@ -606,6 +612,8 @@ ul {
   border: 0;
   border-radius: 10px;
   overflow: hidden;
+  position: relative;
+  z-index: 3;
 }
 .services .service-card .card-img-top {
   width: 100%;
@@ -713,4 +721,22 @@ ul {
   /* SERVICE CAROUSEL CONTROLS END */
 }
 
-/* SERVICES SECTION END *//*# sourceMappingURL=styles.css.map */
+/* SERVICES SECTION END */
+/* SERVICE VIDEO START */
+.service-video {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 520px;
+  margin-top: -120px;
+  overflow: hidden;
+}
+.service-video video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+/* SERVICE VIDEO END *//*# sourceMappingURL=styles.css.map */
