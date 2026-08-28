@@ -1,0 +1,183 @@
+@use "../functions/variables" as *;
+@use "../functions/mixins" as *;
+
+.pricing {
+  padding: 80px 0 130px;
+  background-color: $color-white;
+
+  &__content {
+    @include section-content;
+  }
+
+  .pricing-head {
+    margin-bottom: 100px;
+    text-align: center;
+
+    h2 {
+      margin: 45px 0 0;
+      color: $color-dark;
+      font-size: 48px;
+      font-weight: 600;
+    }
+  }
+
+  .pricing-mark {
+    position: relative;
+    height: 85px;
+
+    p {
+      margin: 0;
+      color: $color-section-mark;
+      font-size: 80px;
+      font-weight: 600;
+      letter-spacing: 14px;
+    }
+
+    &__span {
+      margin-left: 40;
+      margin-right: 0px;
+    }
+  }
+
+  .pricing-line {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+
+    @include logo-line;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__cards {
+    --bs-gutter-x: 20px;
+  }
+
+  .pricing-card {
+    position: relative;
+    width: 82%;
+    height: 575px;
+    margin: 0 auto;
+    padding: 45px 35px;
+    border-radius: 10px;
+    background-color: $color-white;
+    box-shadow: 0 4px 20px #00000018;
+    &__body {
+      position: relative;
+      height: calc(100% - 8px);
+      margin-top: 8px;
+      padding: 45px 35px;
+      background-color: $color-white;
+      transition: 0.4s;
+    }
+    &__head {
+      > img {
+        width: 22px;
+        height: 25px;
+        margin-bottom: 15px;
+      }
+
+      h3 {
+        margin: 0 0 5px;
+        color: #4c4c56;
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      p {
+        margin: 0;
+        color: #4c4c56;
+        font-size: 15px;
+      }
+    }
+
+    &__price {
+      margin: 48px 0 25px;
+      text-align: center;
+
+      h4 {
+        margin: 0;
+        color: #4c4c56;
+        font-size: 60px;
+        font-weight: 600;
+      }
+
+      p {
+        margin: 2px 0 0;
+        color: #4c4c56;
+        font-size: 16px;
+      }
+    }
+
+    &__button {
+      width: 100%;
+      height: 64px;
+      border: 0;
+      border-radius: 30px;
+      background-color: #fff7e4;
+      color: $color-dark;
+      font-size: 17px;
+      font-weight: 600;
+      cursor: pointer;
+
+      &--yellow {
+        background-color: $color-yellow;
+      }
+    }
+
+    &__features {
+      margin-top: 25px;
+    }
+
+    &__popular {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      padding: 5px 18px;
+      border-radius: 15px;
+      background-color: $color-yellow;
+      color: $color-dark;
+      font-size: 13px;
+      font-weight: 600;
+      transform: rotate(15deg);
+    }
+
+    &--popular {
+      height: 635px;
+      padding: 0;
+      background-color: $color-yellow;
+      overflow: hidden;
+      transform: translateY(-30px);
+
+      &:hover {
+        .pricing-card__body {
+          transform: translateY(-8px);
+        }
+      }
+    }
+  }
+
+  .pricing-feature {
+    margin-bottom: 14px;
+
+    @include flex-layout($align: center, $gap: 6px);
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+
+    p {
+      margin: 0;
+      color: #4c4c56;
+      font-size: 16px;
+
+      span {
+        color: $color-yellow;
+      }
+    }
+  }
+}
