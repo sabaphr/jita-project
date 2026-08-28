@@ -49,9 +49,7 @@
     }
 
     &__rating {
-      display: flex;
-      align-items: center;
-      gap: 15px;
+      @include flex-layout($align: center, $gap: 15px);
       margin-top: 8px;
 
       img {
