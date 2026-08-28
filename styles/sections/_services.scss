@@ -5,7 +5,7 @@
 
 .services {
   padding: 80px 0 30px;
-  background-color: #fbf9f2;
+  background-color: $color-light-bg;
   position: relative;
   z-index: 1;
   &__content {
@@ -32,7 +32,7 @@
     height: 85px;
 
     p {
-      color: #e8e5df;
+      color: $color-section-mark;
       font-size: 80px;
       font-weight: 600;
       letter-spacing: 18px;
@@ -101,7 +101,7 @@
     p {
       width: 70%;
       margin: 0;
-      color: #9699a4;
+      color: $color-text-gray;
     }
 
     a {

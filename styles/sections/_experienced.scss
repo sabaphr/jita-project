@@ -33,7 +33,7 @@
   &__description {
     width: 92%;
     margin: 25px 0 42px;
-    color: #9699a4;
+    color: $color-text-gray;
     font-size: 18px;
   }
 
@@ -62,7 +62,7 @@
 
     p {
       margin: 0;
-      color: #9699a4;
+      color: $color-text-gray;
       font-size: 17px;
     }
   }
@@ -101,7 +101,7 @@
 
     p {
       margin: 0;
-      color: #9699a4;
+      color: $color-text-gray;
       font-size: 13px;
     }
   }
