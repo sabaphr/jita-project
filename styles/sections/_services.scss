@@ -9,8 +9,7 @@
   position: relative;
   z-index: 1;
   &__content {
-    width: 90%;
-    margin: 0 auto;
+    @include section-content;
   }
 
   .service-head {
@@ -44,21 +43,9 @@
     position: absolute;
     top: 30px;
     left: 0;
-
     width: 100%;
 
-    @include flex-layout($align: center);
-
-    span {
-      flex: 1;
-      border-top: 2px dashed $color-yellow;
-    }
-
-    img {
-      width: 70px;
-      height: 70px;
-      object-fit: contain;
-    }
+    @include logo-line;
   }
   .service-card {
     width: 100%;
@@ -135,17 +122,12 @@
 
   .carousel-control-prev,
   .carousel-control-next {
-    top: 50%;
+    @include carousel-control;
 
     width: 40px;
     height: 40px;
-
     border: 1px solid $color-yellow;
-    border-radius: 50%;
     background-color: $color-white;
-    transform: translateY(-50%);
-    opacity: 1;
-    transition: 0.3s;
 
     &:hover {
       background-color: $color-yellow;
