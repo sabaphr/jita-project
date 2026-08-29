@@ -1,0 +1,166 @@
+@use "../functions/variables" as *;
+@use "../functions/mixins" as *;
+
+.testimonials {
+  padding: 80px 0 120px;
+  background-color: $color-white;
+
+  &__content {
+    @include section-content;
+  }
+
+  .testimonials-mark {
+    position: relative;
+    height: 85px;
+    text-align: center;
+
+    p {
+      margin: 0;
+      color: $color-section-mark;
+      font-size: 80px;
+      font-weight: 600;
+      letter-spacing: 14px;
+    }
+  }
+
+  .testimonials-line {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+
+    @include logo-line;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  h2 {
+    margin: 45px 0 55px;
+    color: $color-dark;
+    font-size: 48px;
+    font-weight: 600;
+  }
+
+  #testimonialCarousel {
+    position: relative;
+    .carousel-inner {
+      margin-top: -45px;
+      padding-top: 45px;
+    }
+  }
+
+  .testimonial-card {
+    position: relative;
+    z-index: 1;
+    height: 330px;
+    padding: 45px;
+    border-radius: 12px;
+    background-color: $color-white;
+    box-shadow: 0 4px 20px #00000018;
+
+    &__quote {
+      position: absolute;
+      z-index: 100;
+      top: -38px;
+      right: 40px;
+      width: 95px;
+    }
+
+    &__top {
+      margin-bottom: 25px;
+
+      @include flex-layout($justify: space-between, $align: center);
+
+      > img {
+        width: 165px;
+        padding: 6px 10px;
+        border-radius: 15px;
+        background-color: #fff8e8;
+      }
+    }
+
+    &__text {
+      margin-bottom: 15px;
+      color: $color-text-gray;
+      font-size: 16px;
+    }
+
+    &__date {
+      margin: 0;
+      color: $color-yellow;
+      font-size: 18px;
+    }
+  }
+
+  .testimonial-user {
+    @include flex-layout($align: center, $gap: 20px);
+
+    > img {
+      width: 70px;
+      height: 70px;
+      border-radius: 10px;
+    }
+
+    h3 {
+      margin: 0 0 4px;
+      color: #4c4c56;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0;
+      color: $color-text-gray;
+      font-size: 13px;
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    @include carousel-control;
+
+    top: -100px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $color-yellow;
+    background-color: $color-white;
+
+    &:hover {
+      background-color: $color-yellow;
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        border-top-color: $color-white;
+        border-left-color: $color-white;
+      }
+    }
+  }
+
+  .carousel-control-prev {
+    left: auto;
+    right: 60px;
+  }
+
+  .carousel-control-next {
+    right: 0;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 13px;
+    height: 13px;
+    background-image: none;
+    border-top: 2px solid $color-yellow;
+    border-left: 2px solid $color-yellow;
+  }
+
+  .carousel-control-prev-icon {
+    transform: rotate(-45deg);
+  }
+
+  .carousel-control-next-icon {
+    transform: rotate(135deg);
+  }
+}
