@@ -590,6 +590,53 @@ ul {
   font-size: 13px;
 }
 
+@media (max-width: 991px) {
+  .stats-section {
+    height: 150px;
+  }
+  .stats-section .stats-box {
+    top: -80px;
+    width: 93%;
+    height: 190px;
+    padding: 18px 15px;
+    border-radius: 6px;
+  }
+  .stats-section .stats-row {
+    height: 100%;
+    align-content: center;
+  }
+  .stats-section .stats-item {
+    text-align: center;
+  }
+  .stats-section .stats-item h3 {
+    margin-bottom: 3px;
+    font-size: 26px;
+  }
+  .stats-section .stats-item p {
+    width: 70px;
+    margin: 0 auto;
+    font-size: 9px;
+  }
+  .stats-section .satisfied-client {
+    align-items: center;
+    width: 100%;
+    margin-top: 18px;
+    margin-left: 0;
+  }
+  .stats-section .satisfied-client__people {
+    width: 145px;
+  }
+  .stats-section .satisfied-client__rating {
+    gap: 8px;
+    margin-top: 5px;
+  }
+  .stats-section .satisfied-client__rating img {
+    width: 92px;
+  }
+  .stats-section .satisfied-client__rating span {
+    font-size: 9px;
+  }
+}
 .experienced {
   padding: 25px 0 90px;
 }
