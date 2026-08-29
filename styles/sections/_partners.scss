@@ -1,0 +1,21 @@
+@use "../functions/variables" as *;
+@use "../functions/mixins" as *;
+
+.partners {
+  padding: 80px 0;
+  background-color: $color-light-bg;
+  &__content {
+    @include section-content;
+  }
+  &__row {
+    align-items: center;
+  }
+  .partner-logo {
+    height: 80px;
+    @include flex-layout($justify: center, $align: center);
+    img {
+      height: 65px;
+      width: auto;
+    }
+  }
+}
