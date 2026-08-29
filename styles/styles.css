@@ -1194,4 +1194,26 @@ ul {
 }
 .pricing .pricing-feature p span {
   color: #ffb700;
+}
+
+.partners {
+  padding: 80px 0;
+  background-color: #fbf9f2;
+}
+.partners__content {
+  width: 90%;
+  margin: 0 auto;
+}
+.partners__row {
+  align-items: center;
+}
+.partners .partner-logo {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partners .partner-logo img {
+  height: 65px;
+  width: auto;
 }/*# sourceMappingURL=styles.css.map */
