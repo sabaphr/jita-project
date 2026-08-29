@@ -9,33 +9,6 @@
     @include section-content;
   }
 
-  .testimonials-mark {
-    position: relative;
-    height: 85px;
-    text-align: center;
-
-    p {
-      margin: 0;
-      color: $color-section-mark;
-      font-size: 80px;
-      font-weight: 600;
-      letter-spacing: 14px;
-    }
-  }
-
-  .testimonials-line {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 100%;
-
-    @include logo-line;
-
-    img {
-      border-radius: 50%;
-    }
-  }
-
   h2 {
     margin: 45px 0 55px;
     color: $color-dark;

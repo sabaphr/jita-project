@@ -21,36 +21,6 @@
     }
   }
 
-  .projects-mark {
-    position: relative;
-    height: 85px;
-
-    p {
-      margin: 0;
-      color: $color-section-mark;
-      font-size: 80px;
-      font-weight: 600;
-      letter-spacing: 18px;
-    }
-
-    &__span {
-      margin: 0 20px;
-    }
-  }
-
-  .projects-line {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 100%;
-
-    @include logo-line;
-
-    img {
-      border-radius: 50%;
-    }
-  }
-
   &__gallery {
     --bs-gutter-x: 24px;
     margin-top: 0;

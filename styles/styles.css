@@ -86,6 +86,52 @@ ul {
 }
 
 /* YELLOW BUTTON END */
+.section-mark {
+  position: relative;
+  height: 85px;
+}
+.section-mark p {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  color: #e8e5df;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: 14px;
+}
+.section-mark p > span:first-child,
+.section-mark p > span:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.section-mark p > span:first-child {
+  margin-left: -30px;
+  transform: translate(-100%, -50%);
+}
+.section-mark p > span:last-child {
+  margin-left: 44px;
+  transform: translateY(-50%);
+}
+.section-mark__line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  border-top: 2px dashed #ffb700;
+  transform: translateY(-50%);
+}
+.section-mark__line img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .site-header {
   width: 100%;
 }
@@ -581,34 +627,6 @@ ul {
   position: relative;
   z-index: 2;
 }
-.services .service-mark {
-  position: relative;
-  height: 85px;
-}
-.services .service-mark p {
-  color: #e8e5df;
-  font-size: 80px;
-  font-weight: 600;
-  letter-spacing: 18px;
-}
-.services .service-line {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.services .service-line span {
-  flex: 1;
-  border-top: 2px dashed #ffb700;
-}
-.services .service-line img {
-  width: 70px;
-  height: 70px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
 .services .service-card {
   width: 100%;
   border: 0;
@@ -760,41 +778,6 @@ ul {
   font-size: 48px;
   font-weight: 600;
 }
-.projects .projects-mark {
-  position: relative;
-  height: 85px;
-}
-.projects .projects-mark p {
-  margin: 0;
-  color: #e8e5df;
-  font-size: 80px;
-  font-weight: 600;
-  letter-spacing: 18px;
-}
-.projects .projects-mark__span {
-  margin: 0 20px;
-}
-.projects .projects-line {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.projects .projects-line span {
-  flex: 1;
-  border-top: 2px dashed #ffb700;
-}
-.projects .projects-line img {
-  width: 70px;
-  height: 70px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.projects .projects-line img {
-  border-radius: 50%;
-}
 .projects__gallery {
   --bs-gutter-x: 24px;
   margin-top: 0;
@@ -863,41 +846,6 @@ ul {
   color: #161719;
   font-size: 48px;
   font-weight: 600;
-}
-.booking .booking-mark {
-  position: relative;
-  height: 85px;
-}
-.booking .booking-mark p {
-  margin: 0;
-  color: #e8e5df;
-  font-size: 80px;
-  font-weight: 600;
-  letter-spacing: 18px;
-}
-.booking .booking-mark__span {
-  margin: 0 20px;
-}
-.booking .booking-line {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.booking .booking-line span {
-  flex: 1;
-  border-top: 2px dashed #ffb700;
-}
-.booking .booking-line img {
-  width: 70px;
-  height: 70px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.booking .booking-line img {
-  border-radius: 50%;
 }
 .booking__row {
   --bs-gutter-x: 24px;
@@ -1050,42 +998,6 @@ ul {
   font-size: 48px;
   font-weight: 600;
 }
-.pricing .pricing-mark {
-  position: relative;
-  height: 85px;
-}
-.pricing .pricing-mark p {
-  margin: 0;
-  color: #e8e5df;
-  font-size: 80px;
-  font-weight: 600;
-  letter-spacing: 14px;
-}
-.pricing .pricing-mark__span {
-  margin-left: 40;
-  margin-right: 0px;
-}
-.pricing .pricing-line {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.pricing .pricing-line span {
-  flex: 1;
-  border-top: 2px dashed #ffb700;
-}
-.pricing .pricing-line img {
-  width: 70px;
-  height: 70px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.pricing .pricing-line img {
-  border-radius: 50%;
-}
 .pricing__cards {
   --bs-gutter-x: 20px;
 }
@@ -1226,39 +1138,6 @@ ul {
   width: 90%;
   margin: 0 auto;
 }
-.testimonials .testimonials-mark {
-  position: relative;
-  height: 85px;
-  text-align: center;
-}
-.testimonials .testimonials-mark p {
-  margin: 0;
-  color: #e8e5df;
-  font-size: 80px;
-  font-weight: 600;
-  letter-spacing: 14px;
-}
-.testimonials .testimonials-line {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.testimonials .testimonials-line span {
-  flex: 1;
-  border-top: 2px dashed #ffb700;
-}
-.testimonials .testimonials-line img {
-  width: 70px;
-  height: 70px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.testimonials .testimonials-line img {
-  border-radius: 50%;
-}
 .testimonials h2 {
   margin: 45px 0 55px;
   color: #161719;
@@ -1385,39 +1264,6 @@ ul {
   width: 90%;
   margin: 0 auto;
 }
-.questions .questions-mark {
-  position: relative;
-  height: 85px;
-  text-align: center;
-}
-.questions .questions-mark p {
-  margin: 0;
-  color: #e8e5df;
-  font-size: 80px;
-  font-weight: 600;
-  letter-spacing: 14px;
-}
-.questions .questions-line {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.questions .questions-line span {
-  flex: 1;
-  border-top: 2px dashed #ffb700;
-}
-.questions .questions-line img {
-  width: 70px;
-  height: 70px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.questions .questions-line img {
-  border-radius: 50%;
-}
 .questions h2 {
   margin: 45px 0 55px;
   color: #161719;
@@ -1477,39 +1323,6 @@ ul {
 .blogs__content {
   width: 90%;
   margin: 0 auto;
-}
-.blogs .blogs-mark {
-  position: relative;
-  height: 85px;
-  text-align: center;
-}
-.blogs .blogs-mark p {
-  margin: 0;
-  color: #e8e5df;
-  font-size: 80px;
-  font-weight: 600;
-  letter-spacing: 18px;
-}
-.blogs .blogs-line {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.blogs .blogs-line span {
-  flex: 1;
-  border-top: 2px dashed #ffb700;
-}
-.blogs .blogs-line img {
-  width: 70px;
-  height: 70px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.blogs .blogs-line img {
-  border-radius: 50%;
 }
 .blogs h2 {
   margin: 45px 0 55px;

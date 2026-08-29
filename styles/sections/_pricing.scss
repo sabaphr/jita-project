@@ -21,37 +21,6 @@
     }
   }
 
-  .pricing-mark {
-    position: relative;
-    height: 85px;
-
-    p {
-      margin: 0;
-      color: $color-section-mark;
-      font-size: 80px;
-      font-weight: 600;
-      letter-spacing: 14px;
-    }
-
-    &__span {
-      margin-left: 40;
-      margin-right: 0px;
-    }
-  }
-
-  .pricing-line {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 100%;
-
-    @include logo-line;
-
-    img {
-      border-radius: 50%;
-    }
-  }
-
   &__cards {
     --bs-gutter-x: 20px;
   }
