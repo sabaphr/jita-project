@@ -27,26 +27,7 @@
     position: relative;
     z-index: 2;
   }
-  .service-mark {
-    position: relative;
-    height: 85px;
 
-    p {
-      color: $color-section-mark;
-      font-size: 80px;
-      font-weight: 600;
-      letter-spacing: 18px;
-    }
-  }
-
-  .service-line {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 100%;
-
-    @include logo-line;
-  }
   .service-card {
     width: 100%;
     border: 0;
