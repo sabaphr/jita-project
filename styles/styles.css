@@ -775,6 +775,117 @@ ul {
   font-weight: 600;
 }
 
+@media (max-width: 991px) {
+  .experienced {
+    padding: 24px 0 82px;
+  }
+  .experienced__content {
+    width: 94%;
+  }
+  .experienced__left {
+    padding-right: 0;
+  }
+  .experienced__small-title {
+    margin: 0 0 8px;
+    font-size: 11px;
+  }
+  .experienced h2 {
+    font-size: 24px;
+  }
+  .experienced__description {
+    width: 100%;
+    margin: 14px 0 24px;
+    font-size: 16px;
+  }
+  .experienced__services {
+    margin-bottom: 8px;
+  }
+  .experienced .experienced-service {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+  .experienced .experienced-service img {
+    width: 34px;
+    height: 34px;
+  }
+  .experienced .experienced-service div {
+    width: 100%;
+  }
+  .experienced .experienced-service h3 {
+    margin: 0 0 6px 0;
+    font-size: 20px;
+  }
+  .experienced .experienced-service p {
+    font-size: 16px;
+  }
+  .experienced__divider {
+    margin-bottom: 16px;
+  }
+  .experienced__bottom {
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+  .experienced__more {
+    width: 140px;
+    height: 36px;
+    font-size: 11px;
+  }
+  .experienced__more .animated-button__icon {
+    width: 14px;
+    height: 14px;
+  }
+  .experienced__more .animated-button__icon--default {
+    right: 10px;
+  }
+  .experienced__more .animated-button__icon--hover {
+    left: 10px;
+  }
+  .experienced__author {
+    gap: 8px;
+  }
+  .experienced__author img {
+    width: 44px;
+    height: 44px;
+  }
+  .experienced__author h3 {
+    margin: 0 0 2px;
+    font-size: 14px;
+  }
+  .experienced__author p {
+    font-size: 8px;
+  }
+  .experienced__right {
+    margin-top: 20px;
+    padding-left: 0;
+  }
+  .experienced__image-box {
+    height: auto;
+    padding-top: 0;
+    padding-left: 0;
+    border-radius: 8px;
+  }
+  .experienced__main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .experienced__experience {
+    bottom: 15px;
+    left: 12px;
+    width: 180px;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 8px;
+  }
+  .experienced__experience strong {
+    font-size: 28px;
+  }
+  .experienced__experience span {
+    font-size: 11px;
+  }
+}
 /* SERVICES SECTION START */
 .services {
   padding: 80px 0 30px;
