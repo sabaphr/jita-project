@@ -1468,4 +1468,139 @@ ul {
   padding-right: 35px;
   color: #9699a4;
   font-size: 15px;
+}
+
+.blogs {
+  padding: 80px 0 120px;
+  background-color: #ffffff;
+}
+.blogs__content {
+  width: 90%;
+  margin: 0 auto;
+}
+.blogs .blogs-mark {
+  position: relative;
+  height: 85px;
+  text-align: center;
+}
+.blogs .blogs-mark p {
+  margin: 0;
+  color: #e8e5df;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: 18px;
+}
+.blogs .blogs-line {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.blogs .blogs-line span {
+  flex: 1;
+  border-top: 2px dashed #ffb700;
+}
+.blogs .blogs-line img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.blogs .blogs-line img {
+  border-radius: 50%;
+}
+.blogs h2 {
+  margin: 45px 0 55px;
+  color: #161719;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+}
+.blogs #blogCarousel {
+  position: relative;
+}
+.blogs .blog-card {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.blogs .blog-card > img {
+  width: 100%;
+  height: 465px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.blogs .blog-info {
+  height: 100px;
+  padding: 0 22px;
+  background: linear-gradient(100deg, #f3db95 65%, #ffffff 72%, #ffffff 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blogs .blog-info h3 {
+  width: 68%;
+  margin: 0;
+  color: #161719;
+  font-size: 19px;
+  font-weight: 500;
+}
+.blogs .blog-info a {
+  color: #4c4c56;
+  font-size: 15px;
+  font-weight: 600;
+}
+.blogs .blog-info a span {
+  color: #ffb700;
+}
+.blogs .blog-info a:hover {
+  color: #ffb700;
+}
+.blogs .carousel-control-prev,
+.blogs .carousel-control-next {
+  top: 50%;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: 0.3s;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffb700;
+  background-color: #ffffff;
+}
+.blogs .carousel-control-prev:hover,
+.blogs .carousel-control-next:hover {
+  background-color: #ffb700;
+}
+.blogs .carousel-control-prev:hover .carousel-control-prev-icon,
+.blogs .carousel-control-prev:hover .carousel-control-next-icon,
+.blogs .carousel-control-next:hover .carousel-control-prev-icon,
+.blogs .carousel-control-next:hover .carousel-control-next-icon {
+  border-top-color: #ffffff;
+  border-left-color: #ffffff;
+}
+.blogs .carousel-control-prev {
+  left: -60px;
+  padding-left: 5px;
+}
+.blogs .carousel-control-next {
+  right: -60px;
+  padding-right: 5px;
+}
+.blogs .carousel-control-prev-icon,
+.blogs .carousel-control-next-icon {
+  width: 13px;
+  height: 13px;
+  background-image: none;
+  border-top: 2px solid #ffb700;
+  border-left: 2px solid #ffb700;
+}
+.blogs .carousel-control-prev-icon {
+  transform: rotate(-45deg);
+}
+.blogs .carousel-control-next-icon {
+  transform: rotate(135deg);
 }/*# sourceMappingURL=styles.css.map */

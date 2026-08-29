@@ -1,0 +1,145 @@
+@use "../functions/variables" as *;
+@use "../functions/mixins" as *;
+
+.blogs {
+  padding: 80px 0 120px;
+  background-color: $color-white;
+
+  &__content {
+    @include section-content;
+  }
+
+  .blogs-mark {
+    position: relative;
+    height: 85px;
+    text-align: center;
+
+    p {
+      margin: 0;
+      color: $color-section-mark;
+      font-size: 80px;
+      font-weight: 600;
+      letter-spacing: 18px;
+    }
+  }
+
+  .blogs-line {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+
+    @include logo-line;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  h2 {
+    margin: 45px 0 55px;
+    color: $color-dark;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  #blogCarousel {
+    position: relative;
+  }
+
+  .blog-card {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+
+    > img {
+      width: 100%;
+      height: 465px;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .blog-info {
+    height: 100px;
+    padding: 0 22px;
+    background: linear-gradient(
+      100deg,
+      #f3db95 65%,
+      $color-white 72%,
+      $color-white 100%
+    );
+
+    @include flex-layout($justify: space-between, $align: center);
+
+    h3 {
+      width: 68%;
+      margin: 0;
+      color: $color-dark;
+      font-size: 19px;
+      font-weight: 500;
+    }
+
+    a {
+      color: #4c4c56;
+      font-size: 15px;
+      font-weight: 600;
+
+      span {
+        color: $color-yellow;
+      }
+
+      &:hover {
+        color: $color-yellow;
+      }
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    @include carousel-control;
+
+    width: 40px;
+    height: 40px;
+    border: 1px solid $color-yellow;
+    background-color: $color-white;
+
+    &:hover {
+      background-color: $color-yellow;
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        border-top-color: $color-white;
+        border-left-color: $color-white;
+      }
+    }
+  }
+
+  .carousel-control-prev {
+    left: -60px;
+    padding-left: 5px;
+  }
+
+  .carousel-control-next {
+    right: -60px;
+    padding-right: 5px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 13px;
+    height: 13px;
+    background-image: none;
+    border-top: 2px solid $color-yellow;
+    border-left: 2px solid $color-yellow;
+  }
+
+  .carousel-control-prev-icon {
+    transform: rotate(-45deg);
+  }
+
+  .carousel-control-next-icon {
+    transform: rotate(135deg);
+  }
+}
