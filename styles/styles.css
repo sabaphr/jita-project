@@ -242,7 +242,65 @@ ul {
 .site-header .appointment-button {
   width: 288px;
 }
+.site-header .menu-button {
+  display: none;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
 
+@media (max-width: 991px) {
+  .site-header .top-bar {
+    height: 30px;
+  }
+  .site-header .top-bar__content {
+    width: 94%;
+  }
+  .site-header .top-bar p {
+    font-size: 10px;
+  }
+  .site-header .top-bar__offer {
+    display: none;
+  }
+  .site-header .top-bar__socials {
+    gap: 10px;
+  }
+  .site-header .top-bar__socials img {
+    width: 14px;
+    height: 14px;
+  }
+  .site-header .main-navbar {
+    height: 64px;
+  }
+  .site-header .main-navbar__content {
+    width: 94%;
+  }
+  .site-header .main-navbar__logo {
+    gap: 8px;
+    font-size: 16px;
+  }
+  .site-header .main-navbar__logo img {
+    width: 34px;
+    height: 34px;
+  }
+  .site-header .main-navbar__links {
+    display: none;
+  }
+  .site-header .main-navbar__actions {
+    gap: 0;
+  }
+  .site-header .search-button,
+  .site-header .appointment-button {
+    display: none;
+  }
+  .site-header .menu-button {
+    display: flex;
+  }
+  .site-header .menu-button img {
+    width: 28px;
+    height: 28px;
+  }
+}
 .hero {
   position: relative;
   margin-top: -84px;
@@ -402,6 +460,74 @@ ul {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@media (max-width: 991px) {
+  .hero {
+    margin-top: -64px;
+  }
+  .hero .carousel {
+    height: 490px;
+  }
+  .hero__image {
+    -o-object-position: 15% center;
+       object-position: 15% center;
+  }
+  .hero__caption {
+    top: 138px;
+    left: 5%;
+    width: 90%;
+  }
+  .hero__caption h1,
+  .hero__caption h2 {
+    margin: 14px 0 22px 0;
+    font-size: 28px;
+  }
+  .hero__caption--right {
+    left: 5%;
+    width: 90%;
+  }
+  .hero__line {
+    width: 155px;
+  }
+  .hero__line img {
+    width: 42px;
+    height: 42px;
+  }
+  .hero__buttons {
+    gap: 14px;
+  }
+  .hero .hero-button {
+    width: 140px;
+    height: 38px;
+    font-size: 11px;
+  }
+  .hero .hero-button .animated-button__icon {
+    width: 16px;
+    height: 16px;
+  }
+  .hero .hero-button .animated-button__icon--default {
+    right: 12px;
+  }
+  .hero .hero-button .animated-button__icon--hover {
+    left: 12px;
+  }
+  .hero .carousel-control-prev,
+  .hero .carousel-control-next {
+    top: 74%;
+    width: 34px;
+    height: 34px;
+  }
+  .hero .carousel-control-prev {
+    left: 14px;
+  }
+  .hero .carousel-control-next {
+    right: 14px;
+  }
+  .hero .carousel-control-prev-icon,
+  .hero .carousel-control-next-icon {
+    width: 12px;
+    height: 12px;
   }
 }
 .stats-section {

@@ -118,4 +118,81 @@
   .appointment-button {
     width: 288px;
   }
+  .menu-button {
+    display: none;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+  }
+}
+
+// SMALL SCREEN STYLE
+
+@media (max-width: 991px) {
+  .site-header {
+    .top-bar {
+      height: 30px;
+
+      &__content {
+        width: 94%;
+      }
+
+      p {
+        font-size: 10px;
+      }
+
+      &__offer {
+        display: none;
+      }
+
+      &__socials {
+        gap: 10px;
+
+        img {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+
+    .main-navbar {
+      height: 64px;
+
+      &__content {
+        width: 94%;
+      }
+
+      &__logo {
+        gap: 8px;
+        font-size: 16px;
+
+        img {
+          width: 34px;
+          height: 34px;
+        }
+      }
+
+      &__links {
+        display: none;
+      }
+
+      &__actions {
+        gap: 0;
+      }
+    }
+
+    .search-button,
+    .appointment-button {
+      display: none;
+    }
+
+    .menu-button {
+      display: flex;
+
+      img {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
 }
