@@ -1753,6 +1753,111 @@ ul {
   color: #ffb700;
 }
 
+@media (max-width: 991px) {
+  .pricing {
+    padding: 55px 0 65px;
+  }
+  .pricing__content {
+    width: 94%;
+  }
+  .pricing .pricing-head {
+    margin-bottom: 30px;
+  }
+  .pricing .pricing-head .section-mark {
+    height: 55px;
+  }
+  .pricing .pricing-head .section-mark p {
+    font-size: 44px;
+    letter-spacing: 4px;
+  }
+  .pricing .pricing-head .section-mark p > span:first-child {
+    margin-left: -20px;
+  }
+  .pricing .pricing-head .section-mark p > span:last-child {
+    margin-left: 28px;
+  }
+  .pricing .pricing-head .section-mark__line img {
+    width: 44px;
+    height: 44px;
+  }
+  .pricing .pricing-head h2 {
+    width: 100%;
+    margin: 24px 0 0;
+    font-size: 24px;
+  }
+  .pricing .pricing-head h2 br {
+    display: none;
+  }
+  .pricing__cards {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 14px;
+  }
+  .pricing .pricing-card {
+    width: 100%;
+    height: auto;
+    padding: 22px 16px 18px;
+    border-radius: 5px;
+  }
+  .pricing .pricing-card__head > img {
+    width: 16px;
+    height: 18px;
+    margin-bottom: 9px;
+  }
+  .pricing .pricing-card__head h3 {
+    margin-bottom: 3px;
+    font-size: 15px;
+  }
+  .pricing .pricing-card__head p {
+    font-size: 10px;
+  }
+  .pricing .pricing-card__price {
+    margin: 25px 0 16px;
+  }
+  .pricing .pricing-card__price h4 {
+    font-size: 28px;
+  }
+  .pricing .pricing-card__price p {
+    margin-top: 1px;
+    font-size: 10px;
+  }
+  .pricing .pricing-card__button {
+    height: 38px;
+    border-radius: 22px;
+    font-size: 11px;
+  }
+  .pricing .pricing-card__features {
+    margin-top: 17px;
+  }
+  .pricing .pricing-card__popular {
+    top: 22px;
+    right: 16px;
+    padding: 3px 8px;
+    font-size: 9px;
+  }
+  .pricing .pricing-card__body {
+    height: auto;
+    margin-top: 0;
+    padding: 22px 16px 18px;
+  }
+  .pricing .pricing-card--popular {
+    height: auto;
+    padding: 0;
+    border: 1px solid #ffb700;
+    border-radius: 5px;
+    transform: none;
+  }
+  .pricing .pricing-feature {
+    margin-bottom: 8px;
+    gap: 4px;
+  }
+  .pricing .pricing-feature img {
+    width: 10px;
+    height: 10px;
+  }
+  .pricing .pricing-feature p {
+    font-size: 10px;
+  }
+}
 .partners {
   padding: 80px 0;
   background-color: #fbf9f2;
