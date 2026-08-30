@@ -19,3 +19,27 @@
     }
   }
 }
+// SMALL SCREEN STYLE
+
+@media (max-width: 991px) {
+  .partners {
+    &__row {
+      row-gap: 25px;
+    }
+
+    .partner-logo {
+      img {
+        width: 130px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .partners {
+    .partner-column {
+      width: 100%;
+      flex: 0 0 100%;
+    }
+  }
+}
