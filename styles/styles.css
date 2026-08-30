@@ -2246,6 +2246,16 @@ ul {
   transform: rotate(135deg);
 }
 
+@media (max-width: 991px) {
+  .blogs .blog-column {
+    width: 50%;
+  }
+}
+@media (max-width: 700px) {
+  .blogs .blog-column {
+    width: 100%;
+  }
+}
 .contact-banner {
   position: relative;
   top: -170px;
