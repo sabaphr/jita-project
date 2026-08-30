@@ -1880,6 +1880,20 @@ ul {
   width: auto;
 }
 
+@media (max-width: 991px) {
+  .partners__row {
+    row-gap: 25px;
+  }
+  .partners .partner-logo img {
+    width: 130px;
+  }
+}
+@media (max-width: 480px) {
+  .partners .partner-column {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}
 .testimonials {
   padding: 80px 0 120px;
   background-color: #ffffff;
