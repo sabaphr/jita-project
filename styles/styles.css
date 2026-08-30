@@ -1374,6 +1374,9 @@ ul {
   width: 90%;
   margin: 0 auto;
 }
+.booking .booking-head__break {
+  display: none;
+}
 .booking .booking-head {
   margin-bottom: 50px;
   text-align: center;
@@ -1517,6 +1520,111 @@ ul {
   cursor: pointer;
 }
 
+@media (max-width: 991px) {
+  .booking {
+    padding: 55px 0 90px;
+  }
+  .booking__content {
+    width: 94%;
+  }
+  .booking .booking-head {
+    margin-bottom: 35px;
+  }
+  .booking .booking-head .section-mark {
+    height: 65px;
+  }
+  .booking .booking-head .section-mark p {
+    font-size: 52px;
+    letter-spacing: 5px;
+  }
+  .booking .booking-head .section-mark p > span:first-child {
+    margin-left: -25px;
+  }
+  .booking .booking-head .section-mark p > span:last-child {
+    margin-left: 35px;
+  }
+  .booking .booking-head .section-mark__line img {
+    width: 48px;
+    height: 48px;
+  }
+  .booking .booking-head h2 {
+    margin: 28px 0 0;
+    font-size: 32px;
+  }
+  .booking .booking-head .booking-head__break {
+    display: block;
+  }
+  .booking__row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 18px;
+  }
+  .booking__image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .booking__image img {
+    width: 100%;
+    height: auto;
+  }
+  .booking .booking-form {
+    width: 100%;
+    height: auto;
+    padding: 26px;
+    border-radius: 8px;
+  }
+  .booking .booking-form__small-title {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .booking .booking-form h3 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  .booking .booking-form__fields {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+  }
+  .booking .booking-form__message {
+    margin-top: 20px;
+  }
+  .booking .booking-form__message textarea {
+    height: 120px;
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+  .booking .booking-form__checkbox {
+    margin-top: 18px;
+    gap: 7px;
+  }
+  .booking .booking-form__checkbox input {
+    width: 16px;
+    height: 16px;
+  }
+  .booking .booking-form__checkbox span {
+    font-size: 13px;
+  }
+  .booking .booking-form__submit {
+    height: 48px;
+    margin-top: 28px;
+    font-size: 14px;
+  }
+  .booking .booking-form__submit img {
+    width: 20px;
+    height: 20px;
+  }
+  .booking .booking-field {
+    height: 52px;
+    gap: 9px;
+  }
+  .booking .booking-field > img {
+    width: 16px;
+  }
+  .booking .booking-field input,
+  .booking .booking-field select {
+    font-size: 14px;
+  }
+}
 .pricing {
   padding: 80px 0 130px;
   background-color: #ffffff;
