@@ -302,10 +302,9 @@
 }
 
 // BOOKING PAGE
-
 .booking-banner {
-  padding: 55px 0 130px;
-  background-color: $color-booking-bg;
+  padding: 55px 0 130px 0;
+  background-color: $color-light-bg;
 
   &__content {
     @include section-content;
@@ -324,5 +323,204 @@
 
   .section-mark {
     height: 90px;
+  }
+}
+
+.booking-page-section {
+  padding: 65px 0;
+  background-color: $color-white;
+
+  .booking-page-title {
+    margin: 0;
+    color: $color-dark;
+    font-size: 48px;
+    font-weight: 500;
+
+    span {
+      color: $color-yellow;
+      font-weight: 600;
+    }
+  }
+
+  .booking-page-description {
+    margin: 25px 0 0;
+    color: $color-dark;
+    font-size: 18px;
+    opacity: 0.75;
+  }
+
+  .booking-page-details {
+    margin-top: 48px;
+    --bs-gutter-x: 24px;
+    --bs-gutter-y: 38px;
+  }
+
+  .booking-page-item {
+    h3 {
+      margin: 0 0 24px;
+      color: $color-dark;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  .booking-page-phone {
+    color: $color-yellow;
+    font-size: 40px;
+  }
+
+  .booking-page-text {
+    margin: 0;
+    color: $color-dark;
+    font-size: 18px;
+    opacity: 0.75;
+  }
+
+  .booking-page-time {
+    @include flex-layout($align: center, $gap: 14px);
+
+    img {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  .booking-page-form {
+    height: 800px;
+    background-color: $color-light-bg;
+    border: 1px solid $color-section-mark;
+
+    h3 {
+      font-size: 46px;
+    }
+
+    .booking-form__message {
+      margin-top: 30px;
+
+      textarea {
+        height: 205px;
+        background-color: transparent;
+      }
+    }
+
+    .booking-form__checkbox {
+      margin-top: 25px;
+    }
+  }
+
+  .booking-page-submit {
+    width: 184px;
+    margin: 48px 0 0 auto;
+  }
+}
+.booking-banner {
+  padding: 55px 0 130px 0;
+  background-color: $color-light-bg;
+
+  &__content {
+    @include section-content;
+    @include flex-layout(
+      $direction: column,
+      $align: center,
+      $justify: center,
+      $gap: 20px
+    );
+  }
+
+  &__tower {
+    width: 46px;
+    margin-bottom: 18px;
+  }
+
+  .section-mark {
+    height: 90px;
+  }
+}
+
+.booking-page-section {
+  padding: 65px 0;
+  background-color: $color-white;
+
+  .booking-page-title {
+    margin: 0;
+    color: $color-dark;
+    font-size: 48px;
+    font-weight: 500;
+
+    span {
+      color: $color-yellow;
+      font-weight: 600;
+    }
+  }
+
+  .booking-page-description {
+    margin: 25px 0 0;
+    color: $color-dark;
+    font-size: 18px;
+    opacity: 0.75;
+  }
+
+  .booking-page-details {
+    margin-top: 48px;
+    --bs-gutter-x: 24px;
+    --bs-gutter-y: 38px;
+  }
+
+  .booking-page-item {
+    h3 {
+      margin: 0 0 24px;
+      color: $color-dark;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  .booking-page-phone {
+    color: $color-yellow;
+    font-size: 40px;
+  }
+
+  .booking-page-text {
+    margin: 0;
+    color: $color-dark;
+    font-size: 18px;
+    opacity: 0.75;
+  }
+
+  .booking-page-time {
+    @include flex-layout($align: center, $gap: 14px);
+
+    img {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  .booking-page-form {
+    height: 800px;
+    background-color: $color-light-bg;
+    border: 1px solid $color-section-mark;
+
+    h3 {
+      font-size: 46px;
+    }
+
+    .booking-form__message {
+      margin-top: 30px;
+
+      textarea {
+        height: 205px;
+        background-color: transparent;
+      }
+    }
+
+    .booking-form__checkbox {
+      margin-top: 25px;
+    }
+  }
+
+  .booking-page-submit {
+    width: 184px;
+    margin: 48px 0 0 auto;
   }
 }
