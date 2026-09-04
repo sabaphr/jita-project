@@ -300,3 +300,29 @@
     }
   }
 }
+
+// BOOKING PAGE
+
+.booking-banner {
+  padding: 55px 0 130px;
+  background-color: $color-booking-bg;
+
+  &__content {
+    @include section-content;
+    @include flex-layout(
+      $direction: column,
+      $align: center,
+      $justify: center,
+      $gap: 20px
+    );
+  }
+
+  &__tower {
+    width: 46px;
+    margin-bottom: 18px;
+  }
+
+  .section-mark {
+    height: 90px;
+  }
+}

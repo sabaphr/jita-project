@@ -1625,6 +1625,24 @@ ul {
     font-size: 14px;
   }
 }
+.booking-banner {
+  padding: 55px 0 130px;
+  background-color: #fbf9f2;
+}
+.booking-banner__content {
+  width: 90%;
+  margin: 0 auto;
+}
+.booking-banner__tower {
+  display: block;
+  width: 46px;
+  margin: 0 auto 18px;
+}
+.booking-banner .section-mark {
+  width: 100%;
+  height: 90px;
+}
+
 .pricing {
   padding: 80px 0 130px;
   background-color: #ffffff;
