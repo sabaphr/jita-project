@@ -135,6 +135,9 @@ ul {
 .site-header {
   width: 100%;
 }
+.site-header--inner {
+  background-color: #ffffff;
+}
 .site-header .top-bar {
   width: 100%;
   height: 42px;
@@ -1719,98 +1722,25 @@ ul {
   margin: 48px 0 0 auto;
 }
 
-.booking-banner {
-  padding: 55px 0 130px 0;
-  background-color: #fbf9f2;
-}
-.booking-banner__content {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-}
-.booking-banner__tower {
-  width: 46px;
-  margin-bottom: 18px;
-}
-.booking-banner .section-mark {
-  height: 90px;
-}
-
-.booking-page-section {
-  padding: 65px 0;
+.services.booking-services {
+  padding: 55px 0 120px 0;
   background-color: #ffffff;
 }
-.booking-page-section .booking-page-title {
+.services.booking-services .booking-services__head h2 {
   margin: 0;
-  color: #161719;
-  font-size: 48px;
-  font-weight: 500;
 }
-.booking-page-section .booking-page-title span {
-  color: #ffb700;
-  font-weight: 600;
-}
-.booking-page-section .booking-page-description {
-  margin: 25px 0 0;
-  color: #161719;
-  font-size: 18px;
-  opacity: 0.75;
-}
-.booking-page-section .booking-page-details {
-  margin-top: 48px;
-  --bs-gutter-x: 24px;
-  --bs-gutter-y: 38px;
-}
-.booking-page-section .booking-page-item h3 {
-  margin: 0 0 24px;
-  color: #161719;
-  font-size: 18px;
-  font-weight: 600;
-}
-.booking-page-section .booking-page-phone {
-  color: #ffb700;
-  font-size: 40px;
-}
-.booking-page-section .booking-page-text {
-  margin: 0;
-  color: #161719;
-  font-size: 18px;
-  opacity: 0.75;
-}
-.booking-page-section .booking-page-time {
+.services.booking-services .booking-services__action {
+  margin-top: 45px;
   display: flex;
-  align-items: center;
-  gap: 14px;
+  justify-content: center;
 }
-.booking-page-section .booking-page-time img {
-  width: 28px;
-  height: 28px;
+.services.booking-services .booking-services__more {
+  width: 230px;
+  font-size: 17px;
 }
-.booking-page-section .booking-page-form {
-  height: 800px;
-  background-color: #fbf9f2;
-  border: 1px solid #e8e5df;
-}
-.booking-page-section .booking-page-form h3 {
-  font-size: 46px;
-}
-.booking-page-section .booking-page-form .booking-form__message {
-  margin-top: 30px;
-}
-.booking-page-section .booking-page-form .booking-form__message textarea {
-  height: 205px;
-  background-color: transparent;
-}
-.booking-page-section .booking-page-form .booking-form__checkbox {
-  margin-top: 25px;
-}
-.booking-page-section .booking-page-submit {
-  width: 184px;
-  margin: 48px 0 0 auto;
+.services.booking-services .booking-services__more .animated-button__icon {
+  width: 24px;
+  height: 24px;
 }
 
 .pricing {
