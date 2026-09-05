@@ -3,9 +3,7 @@
 
 .site-header {
   width: 100%;
-  &--inner {
-    background-color: $color-white;
-  }
+
   .top-bar {
     width: 100%;
     height: 42px;
@@ -110,6 +108,7 @@
   .search-button {
     background-color: #00000000;
     border: 0;
+
     img {
       width: 50px;
       height: 50px;
@@ -120,11 +119,42 @@
   .appointment-button {
     width: 288px;
   }
+
   .menu-button {
     display: none;
     padding: 0;
     background-color: transparent;
     border: 0;
+  }
+
+  &--inner {
+    .main-navbar {
+      background-color: $color-white;
+      box-shadow: 0 3px 10px #00000014;
+    }
+
+    .main-navbar__logo {
+      color: $color-dark;
+
+      &:hover {
+        color: $color-dark;
+      }
+    }
+
+    .main-navbar__links {
+      a {
+        color: $color-dark;
+
+        &:hover {
+          color: $color-yellow;
+        }
+
+        &.active {
+          color: $color-dark;
+          border-bottom: 2px solid $color-yellow;
+        }
+      }
+    }
   }
 }
 

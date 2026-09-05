@@ -132,11 +132,37 @@ ul {
   transform: translate(-50%, -50%);
 }
 
+.page-pagination {
+  margin: 45px 0 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.page-pagination__button {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  background-color: #e8e5df;
+  color: #161719;
+  border: 0;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+}
+.page-pagination__button:hover {
+  background-color: #ffb700;
+}
+.page-pagination__button.active {
+  background-color: #ffb700;
+  color: #ffffff;
+}
+.page-pagination__next {
+  font-size: 22px;
+}
+
 .site-header {
   width: 100%;
-}
-.site-header--inner {
-  background-color: #ffffff;
 }
 .site-header .top-bar {
   width: 100%;
@@ -250,6 +276,26 @@ ul {
   padding: 0;
   background-color: transparent;
   border: 0;
+}
+.site-header--inner .main-navbar {
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.0784313725);
+}
+.site-header--inner .main-navbar__logo {
+  color: #161719;
+}
+.site-header--inner .main-navbar__logo:hover {
+  color: #161719;
+}
+.site-header--inner .main-navbar__links a {
+  color: #161719;
+}
+.site-header--inner .main-navbar__links a:hover {
+  color: #ffb700;
+}
+.site-header--inner .main-navbar__links a.active {
+  color: #161719;
+  border-bottom: 2px solid #ffb700;
 }
 
 @media (max-width: 991px) {
