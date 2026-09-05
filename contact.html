@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Electric Man - Handyman</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+
+  <body>
+    <!-- HEADER START -->
+    <header class="site-header site-header--inner">
+      <nav class="main-navbar">
+        <div class="main-navbar__content">
+          <a class="main-navbar__logo" href="./index.html">
+            <img src="./assets/common/banner.png" alt="main logo" />
+            <span>ElectricMan</span>
+          </a>
+
+          <ul class="main-navbar__links">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="./about.html">About Us</a>
+            </li>
+
+            <li>
+              <a href="./booking.html">Booking</a>
+            </li>
+
+            <li>
+              <a href="./services.html">Services</a>
+            </li>
+
+            <li>
+              <a href="./blogs.html">Blogs</a>
+            </li>
+
+            <li>
+              <a class="active" href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="main-navbar__actions">
+            <button class="search-button" type="button">
+              <img src="./assets/header/search.png" alt="search" />
+            </button>
+
+            <a
+              class="appointment-button animated-button yellow-button"
+              href="./booking.html"
+            >
+              <img
+                class="animated-button__icon animated-button__icon--hover"
+                src="./assets/common/paper_airplane_yellow_rotated.png"
+                alt="paper airplane yellow"
+              />
+
+              <span class="animated-button__text">Book Appointment</span>
+
+              <img
+                class="animated-button__icon animated-button__icon--default"
+                src="./assets/common/paper_airplane_black.png"
+                alt="paper airplane black"
+              />
+            </a>
+
+            <button class="menu-button" type="button">
+              <img src="./assets/header/menu.png" alt="menu" />
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- HEADER END -->
+    <!-- MAIN START-->
+    <main>
+      <!-- CONTACT START -->
+      <!-- CONTACT HEADER START -->
+      <section class="booking-banner">
+        <div class="booking-banner__content">
+          <img
+            class="booking-banner__tower"
+            src="./assets/blogs/antena.png"
+            alt="antena"
+          />
+
+          <div class="section-mark">
+            <p>
+              <span>CONT</span>
+              <span>ACT</span>
+            </p>
+
+            <div class="section-mark__line">
+              <img src="./assets/common/main_logo.png" alt="main logo" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT HEADER END -->
+      <!-- CONTACT INFO START -->
+      <section class="contact-info">
+        <div class="contact-info__content">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+              <div class="contact-info__text">
+                <h2>Get In Touch</h2>
+
+                <p>
+                  At Lumex, we are driven by a passion for creating a
+                  sustainable future. As a leading provider of energy solutions.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="row g-4">
+                <div class="col-lg-4">
+                  <div class="contact-info__card">
+                    <div class="contact-info__icon">
+                      <img src="./assets/contact/call.png" alt="call" />
+                    </div>
+
+                    <h3>Our Contact Info</h3>
+
+                    <a href="tel:+15612581234">+156 1258 1234</a>
+                    <a href="mailto:mail@xyz.com">mail@xyz.com</a>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="contact-info__card">
+                    <div class="contact-info__icon">
+                      <img src="./assets/contact/location.png" alt="location" />
+                    </div>
+
+                    <h3>Our Address</h3>
+
+                    <p>
+                      Asklepos Tower
+                      <br />
+                      Makima Street 251
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="contact-info__card">
+                    <div class="contact-info__icon">
+                      <img src="./assets/contact/call.png" alt="call" />
+                    </div>
+
+                    <h3>For Quotations</h3>
+
+                    <a href="tel:+15612581234">+156 1258 1234</a>
+                    <a href="mailto:mail@quotes.xyz.com">
+                      mail@quotes.xyz.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT INFO END -->
+      <!-- BOOKING START -->
+      <section class="booking" id="booking">
+        <div class="booking__content">
+          <div class="row booking__row">
+            <div class="col-12 col-lg-6">
+              <div class="booking__image">
+                <img
+                  src="./assets/home/6.booing/main_image.webp"
+                  alt="electrician service"
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <form class="booking-form">
+                <h3>Get In Touch</h3>
+                <p class="booking-form__small-title">
+                  You can reach us anytime.
+                </p>
+
+                <div class="row booking-form__fields">
+                  <div class="col-12 col-lg-6">
+                    <label class="booking-field">
+                      <img
+                        src="./assets/home/6.booing/name.png"
+                        alt="name icon"
+                      />
+
+                      <input
+                        type="text"
+                        name="first-name"
+                        placeholder="First Name"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="col-12 col-lg-6">
+                    <label class="booking-field">
+                      <img
+                        src="./assets/home/6.booing/name.png"
+                        alt="name icon"
+                      />
+
+                      <input
+                        type="text"
+                        name="last-name"
+                        placeholder="Last Name"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="col-12 col-lg-6">
+                    <label class="booking-field">
+                      <img
+                        src="./assets/home/6.booing/email.png"
+                        alt="email icon"
+                      />
+
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="sample@mail.com"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="col-12 col-lg-6">
+                    <label class="booking-field">
+                      <img
+                        src="./assets/home/6.booing/phone.png"
+                        alt="phone icon"
+                      />
+
+                      <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Phone Number"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="col-12 col-lg-6">
+                    <label class="booking-field">
+                      <img
+                        src="./assets/home/6.booing/location.png"
+                        alt="location icon"
+                      />
+
+                      <input
+                        type="text"
+                        name="location"
+                        placeholder="Your Location"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="col-12 col-lg-6">
+                    <label class="booking-field">
+                      <img
+                        src="./assets/home/6.booing/arrow.png"
+                        alt="arrow icon"
+                      />
+
+                      <select name="service">
+                        <option value="select">Select A Service</option>
+                        <option value="installation">
+                          Electrical Installation
+                        </option>
+                        <option value="repairs">Electrical Repairs</option>
+                        <option value="emergency">Emergency Service</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+
+                <label class="booking-form__message">
+                  <textarea
+                    name="message"
+                    placeholder="Leave us a message..."
+                  ></textarea>
+                </label>
+
+                <label class="booking-form__checkbox">
+                  <input type="checkbox" name="promotion" />
+
+                  <span>I agree to receiving promotional updates.</span>
+                </label>
+
+                <button
+                  class="booking-form__submit animated-button yellow-button"
+                  type="submit"
+                >
+                  <img
+                    class="animated-button__icon animated-button__icon--hover"
+                    src="./assets/common/paper_airplane_yellow_rotated.png"
+                    alt="paper airplane yellow rotated"
+                  />
+
+                  <span class="animated-button__text">Submit</span>
+
+                  <img
+                    class="animated-button__icon animated-button__icon--default"
+                    src="./assets/common/paper_airplane_black.png"
+                    alt="paper airplane black"
+                  />
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- BOOKING END -->
+      <!-- MAP START -->
+      <section class="contact-map">
+        <div class="contact-map__content">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d354344.8710130863!2d44.477120926519035!3d41.72725109970277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd7e64f626b%3A0x61d084ede2576ea3!2z4YOX4YOR4YOY4YOa4YOY4YOh4YOY!5e1!3m2!1ska!2sge!4v1788607064876!5m2!1ska!2sge"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+      </section>
+      <!-- MAP END -->
+      <!-- CONTACT END -->
+    </main>
+    <!-- MAIN END -->
+    <br />
+    <br />
+    <!-- FOOTER START -->
+    <footer class="footer">
+      <!-- CONTACT BANNER START -->
+      <section class="contact-banner">
+        <div class="contact-banner__content">
+          <div class="contact-banner__info">
+            <h2>
+              Cant find your desired services? Let us know 24/7
+              <br />
+              availability
+            </h2>
+
+            <div class="contact-banner__buttons">
+              <a href="./contact.html" class="quote-button animated-button">
+                <span class="animated-button__text">Get A Quote</span>
+
+                <img
+                  class="animated-button__icon animated-button__icon--default"
+                  src="./assets/home/11.services/paper_airplane_white.png"
+                  alt="paper airplane white"
+                />
+
+                <img
+                  class="animated-button__icon animated-button__icon--hover"
+                  src="./assets/common/paper_airplane_yellow_rotated.png"
+                  alt="paper airplane yellow rotated"
+                />
+              </a>
+
+              <a href="./services.html" class="yellow-button animated-button">
+                <span class="animated-button__text">Get A Service</span>
+
+                <img
+                  class="animated-button__icon animated-button__icon--default"
+                  src="./assets/home/11.services/paper_airplane_black.png"
+                  alt="paper airplane black"
+                />
+
+                <img
+                  class="animated-button__icon animated-button__icon--hover"
+                  src="./assets/common/paper_airplane_yellow_rotated.png"
+                  alt="paper airplane yellow rotated"
+                />
+              </a>
+            </div>
+          </div>
+
+          <img src="./assets/home/11.services/man.webp" alt="man" />
+        </div>
+      </section>
+      <!-- CONTACT BANNER END -->
+
+      <div class="footer__content">
+        <div class="footer-main">
+          <div class="footer-about">
+            <a href="./index.html" class="footer-logo">
+              <img src="./assets/common/banner.png" alt="banner" />
+
+              <span>ElectricMan</span>
+            </a>
+
+            <p>
+              At ElectricMan, we are committed to providing safe,
+              <br />
+              efficient, and high-quality electrical services for homes.
+            </p>
+
+            <a href="tel:+11234567890" class="footer-phone">
+              <img src="./assets/footer/phone.png" alt="phone" />
+
+              <strong>+1 (123) 456-7890</strong>
+            </a>
+
+            <h3>Follow Us</h3>
+
+            <img src="./assets/footer/icons.png" alt="icons" />
+          </div>
+
+          <nav class="footer-links">
+            <div>
+              <h3>Resources</h3>
+
+              <ul>
+                <li>
+                  <a href="./about.html">About Us</a>
+                </li>
+
+                <li>
+                  <a href="./blogs.html">Blogs</a>
+                </li>
+
+                <li>
+                  <a href="./services.html">Services</a>
+                </li>
+
+                <li>
+                  <a href="./booking.html">Booking</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Quick Links</h3>
+
+              <ul>
+                <li>
+                  <a href="./index.html">Home</a>
+                </li>
+
+                <li>
+                  <a href="./index.html">Home 2</a>
+                </li>
+
+                <li>
+                  <a href="./services.html">Service Detail</a>
+                </li>
+
+                <li>
+                  <a href="./booking.html">Booking</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="footer-subscribe">
+            <h2>Subscribe now</h2>
+
+            <p>Explore the latest advancements</p>
+
+            <form class="footer-form">
+              <label for="subscribe-email">Email</label>
+
+              <input
+                id="subscribe-email"
+                type="email"
+                placeholder="Enter Your Email"
+              />
+
+              <button type="submit" class="yellow-button animated-button">
+                <span class="animated-button__text">Submit</span>
+
+                <img
+                  class="animated-button__icon animated-button__icon--default"
+                  src="./assets/home/11.services/paper_airplane_black.png"
+                  alt="paper airplane black"
+                />
+
+                <img
+                  class="animated-button__icon animated-button__icon--hover"
+                  src="./assets/common/paper_airplane_yellow_rotated.png"
+                  alt="paper airplane yellow rotated"
+                />
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <p class="footer-copy">© ElectricMan 2026. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
