@@ -116,6 +116,174 @@
     transform: rotate(135deg);
   }
 }
+
+// page
+.blogs-page {
+  padding: 78px 0 25px;
+  background-color: $color-white;
+
+  &__content {
+    @include section-content;
+  }
+
+  &__tools {
+    margin-bottom: 48px;
+    @include flex-layout($justify: space-between, $align: center);
+  }
+
+  &__filter-area {
+    @include flex-layout($align: center, $gap: 22px);
+
+    p {
+      margin: 0;
+      color: $color-dark;
+      font-size: 18px;
+      opacity: 0.75;
+    }
+  }
+
+  &__filter-button {
+    width: 138px;
+    height: 52px;
+    background-color: $color-white;
+    color: $color-dark;
+    border: 1px solid $color-dark;
+    border-radius: 6px;
+    font-size: 17px;
+    @include flex-layout($justify: center, $align: center, $gap: 10px);
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &__search {
+    width: 350px;
+    height: 62px;
+    padding: 5px 5px 5px 18px;
+    border: 1px solid $color-dark;
+    border-radius: 7px;
+    @include flex-layout($align: center);
+
+    label {
+      display: none;
+    }
+
+    input {
+      flex: 1;
+      width: 100%;
+      padding: 0;
+      color: $color-dark;
+      font-size: 16px;
+      background-color: $color-white;
+      border: 0;
+      outline: 0;
+    }
+
+    button {
+      padding: 0;
+      background-color: transparent;
+      border: 0;
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  .blog-page-card {
+    padding: 22px;
+    background-color: $color-light-bg;
+    border-radius: 20px;
+
+    &__image {
+      position: relative;
+
+      > img {
+        display: block;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+    }
+
+    &__date {
+      position: absolute;
+      right: 10px;
+      bottom: -20px;
+      width: 66px;
+      height: 82px;
+      background-color: $color-yellow;
+      color: $color-dark;
+      border-radius: 8px;
+      @include flex-layout(
+        $direction: column,
+        $justify: center,
+        $align: center,
+        $gap: 3px
+      );
+
+      strong {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      span {
+        font-size: 17px;
+      }
+    }
+
+    &__meta {
+      margin-top: 25px;
+      @include flex-layout($align: center, $gap: 18px);
+
+      span {
+        color: $color-dark;
+        font-size: 14px;
+        @include flex-layout($align: center, $gap: 7px);
+      }
+
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    h3 {
+      margin: 20px 0 16px;
+      color: $color-dark;
+      font-size: 21px;
+      font-weight: 600;
+    }
+
+    > p {
+      margin: 0;
+      color: $color-dark;
+      font-size: 17px;
+      opacity: 0.75;
+    }
+
+    > a {
+      display: inline-block;
+      margin-top: 25px;
+      color: $color-dark;
+      font-size: 17px;
+      font-weight: 600;
+
+      span {
+        color: $color-yellow;
+      }
+
+      &:hover {
+        color: $color-yellow;
+      }
+    }
+  }
+}
 // SMALL SCREEN STYLE
 
 @media (max-width: 991px) {
