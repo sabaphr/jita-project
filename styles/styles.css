@@ -163,6 +163,9 @@ ul {
 
 .site-header {
   width: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
 }
 .site-header .top-bar {
   width: 100%;
