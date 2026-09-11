@@ -21,10 +21,6 @@
     }
   }
 
-  &__cards {
-    --bs-gutter-x: 20px;
-  }
-
   .pricing-card {
     position: relative;
     width: 82%;
@@ -196,11 +192,6 @@
           display: none;
         }
       }
-    }
-
-    &__cards {
-      --bs-gutter-x: 0;
-      --bs-gutter-y: 14px;
     }
 
     .pricing-card {
