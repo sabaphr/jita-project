@@ -51,6 +51,7 @@
       background-color: rgba(255, 183, 0, 0.55);
       transform: translateY(100%);
       transition: 0.4s;
+      z-index: 1;
     }
 
     &__icon {
@@ -60,10 +61,7 @@
       width: 72px;
       height: 72px;
       transform: translate(-50%, -50%);
-
       img {
-        display: block;
-        width: 100%;
         border-radius: 50%;
       }
     }

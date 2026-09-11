@@ -1309,6 +1309,7 @@ ul {
   background-color: rgba(255, 183, 0, 0.55);
   transform: translateY(100%);
   transition: 0.4s;
+  z-index: 1;
 }
 .projects .project-item__icon {
   position: absolute;
@@ -1319,8 +1320,6 @@ ul {
   transform: translate(-50%, -50%);
 }
 .projects .project-item__icon img {
-  display: block;
-  width: 100%;
   border-radius: 50%;
 }
 .projects .project-item:hover > img {
@@ -2173,10 +2172,6 @@ ul {
   }
   .testimonials .testimonial-user p {
     font-size: 9px;
-  }
-  .testimonials .carousel-control-prev,
-  .testimonials .carousel-control-next {
-    display: none;
   }
 }
 .questions {
