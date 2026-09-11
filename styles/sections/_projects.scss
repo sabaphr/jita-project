@@ -122,21 +122,11 @@
       }
     }
 
-    &__gallery {
-      gap: 14px;
-      margin: 0;
-
-      > .col-4 {
-        display: contents;
-      }
-    }
-
     &__column {
-      display: contents;
+      gap: 16px;
     }
 
     .project-item {
-      flex: 0 0 100%;
       width: 100%;
       height: 420px;
       border-radius: 7px;
