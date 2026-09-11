@@ -571,10 +571,10 @@ ul {
     height: 34px;
   }
   .hero .carousel-control-prev {
-    left: 14px;
+    left: 30px;
   }
   .hero .carousel-control-next {
-    right: 14px;
+    right: 3-px;
   }
   .hero .carousel-control-prev-icon,
   .hero .carousel-control-next-icon {
