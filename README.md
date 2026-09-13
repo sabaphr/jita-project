@@ -11,4 +11,4 @@ https://github.com/sabaphr/jita-project
 
 Made by Saba Phruidze
 
-This is demo version: https://sabaphr.github.io/jita-project/index.html
+This is demo version: https://sabaphr.github.io/jita-project/
