@@ -162,6 +162,50 @@
 }
 
 // SMALL SCREEN STYLE
+@media (max-width: 1300px) {
+  .site-header {
+    .main-navbar {
+      &__links {
+        li:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .site-header {
+    .main-navbar {
+      &__links {
+        li:nth-child(5) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .site-header {
+    .main-navbar {
+      &__links {
+        li:nth-child(4) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .site-header {
+    .main-navbar {
+      &__links {
+        li:nth-child(3) {
+          display: none;
+        }
+      }
+    }
+  }
+}
 
 @media (max-width: 991px) {
   .site-header {
